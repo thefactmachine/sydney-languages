@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sydney Languages</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/sydStyle.css">
+  </head>
+  <body>
+      
+  <div class="container">
+      <div class="hero-unit"></div>
+    <div class="row">
+        <div class="span7">
+            <h2>Interactive map</h2>
+            <p class = "lead">Hover your mouse over a specific area to view language details. You can also drag the
+            map to see other regions. The white areas are too sparsely populated for further analysis.</p>
+        </div>
+        <div class="span5">
+            <h2>View details for your area</h2>
+            <p class = "lead">Non-English speakers are defined as people who speak a different
+                language to English at home.</p>
+        </div>
+    </div>
+    <div class="row dataRow">
+        <div class="span7">
+            <svg id="sydMap" width="586" height="300">
+                <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse"
+                                x1="8.2983" y1="-14.373" x2="577.7016" y2="314.3721">
+                    <stop  offset="0" style="stop-color:#0F003F"/>
+                    <stop  offset="0.2833" style="stop-color:#171A6D"/>
+                    <stop  offset="0.6074" style="stop-color:#2d3d9b"/>
+                    <stop  offset="0.80" style="stop-color:#3f6bb8"/>
+                    <stop  offset="1" style="stop-color:#8cacc2"/>
+                </linearGradient>
+                <rect fill="url(#SVGID_1_)" width="586" height="300"/>
+            </svg>
+
+
+            <img src="img/mapLegend.svg" alt = "legend for Sydney Map">
+            <h5 id="mapLegend">Map Legend: <i>(percentage of non English speakers)</i></h5>
+            <h6 id="dataSources">Data sources: Australian Bureau of Statistics (2001, 2006, 2011 Censuses); Geoscience MapConnect</h6>
+
+            <!--Tweet-->
+            <a href="https://twitter.com/share" class="twitter-share-button lcl-twitter-share" data-url="http://www.thefactmachine/languages"
+               data-text="Languages of Sydney" data-size="large" data-count="none">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?
+                    'http':'https';if(!d.getElementById(id)){js=d.createElement(s);
+                js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}
+            }(document, 'script', 'twitter-wjs');</script>
+
+
+            <!--Follow Me-->
+            <a href="https://twitter.com/markact" class="twitter-follow-button lcl-twitter-follow" data-show-count="false"
+               data-size="large">Follow @markact</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?
+                    'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;
+                js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
+            (document, 'script', 'twitter-wjs');</script>
+
+            <h3>Making a Real Time Interactive Map</h3>
+            <p>The following 2 minute video demonstrates the basic steps to produce an interactive map using Australian
+                Bureau of Statistics census information. Please watch in high definition!
+            </p>
+
+            <iframe width="586" height="357" src="//www.youtube.com/embed/q2F3x2BmMIY" frameborder="1" allowfullscreen></iframe>
+
+
+
+        </div>
+        <div class="span5">
+          <!--Area Name and Population Widget-->
+          <h4>Area Name: <span id="areaName"></span></h4>
+          <h4>Population: <span id="population"></span></h4>
+           <!--Non-English Language Speakers Widget-->
+            <h4 id="NELangSpeakers">Non-English Language Speakers</h4>
+
+
+                <svg id="popPercent" width="418" height="20">
+                    <rect width="418" height="20" fill="none" stroke="#231F20" stroke-width="4"></rect>
+                </svg>
+                <!--Non-English Language Speakers Widget-->
+                <h4 id="TopNLangSpeakers">Top 6 Non-English Languages</h4>
+                <svg id="TopNSVG" width="418" height="120"></svg>
+
+
+                <h4 id="ratesOfChange">Rates of Change</h4>
+               <svg id="tspWidget" width="418" height="300"></svg>
+
+            <h3>Fast Facts</h3>
+            <p>Besides English, the most popular language spoken in Sydney is Arabic. Arabic is spoken in quite a few
+                countries including: Egypt, Sudan, Algeria and Iraq.
+            </p>
+    </div>
+
+
+
+
+      </div>
+  </div>
+    <script type="text/javascript" src="d3/d3.js"></script>
+    <script type="text/javascript" src="d3/utils.js"></script>
+    <script type="text/javascript" src="d3/q.js"></script>
+    <script type="text/javascript" src="d3/cf.js"></script>
+    <script type="text/javascript" src="d3/topo.js"></script>
+    <script type="text/javascript" src="d3/main.js"> </script>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-52569859-1', 'auto');
+      ga('send', 'pageview');
+
+  </script>
+
+
+  </body>
+</html> 

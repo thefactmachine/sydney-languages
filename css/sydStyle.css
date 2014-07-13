@@ -1,0 +1,252 @@
+.container{
+            width:1024px;
+}
+
+.span5 {
+	width: 418px;
+}
+
+.span7 {
+	width: 586px;
+}
+
+h2 {
+    color: #69696b;
+}
+
+#mapLegend {
+    color: #69696b;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+#dataSources  {
+    color: #69696b;
+    margin-top: 0px;
+    margin-bottom: 8px;
+    font-weight: normal;
+}
+
+
+.sufficient{
+    color: #000;
+
+}
+
+.insufficient{
+    color: #254bc3;
+
+}
+
+
+h4 {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+
+
+
+.hero-unit {
+
+    height: 161px;
+    padding: 0px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+	background-image: url('../img/sydImage.jpg'); 
+}
+
+
+#NELangSpeakers {
+  padding-top: 5px;
+
+}
+
+
+p .lead {
+    font-size: 18;
+}
+
+#sydMap {
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#TopNLangSpeakers {
+    padding-top: 5px;
+}
+
+h1 {
+	margin-top: 2px;
+	padding-bottom: 15px;
+    text-align: right;
+}
+
+#TopNSVG text {
+    fill: black;
+    font: 12px sans-serif;
+    text-anchor: start;
+}
+
+
+#TopNSVG path {
+    fill: #3366CC;
+}
+
+
+.dataRow {
+    margin-top: 20px;
+
+}
+
+
+
+/*This is for the map borders*/
+.subunit-boundary {
+    fill: none;
+    stroke: #d5e2db;
+    stroke-dasharray: 2,1;
+    stroke-linejoin: round;
+}
+
+#areaName {
+    font-weight: normal;
+    font-size: 16px;
+    padding-left: 5px;
+
+}
+#population {
+    font-weight: normal;
+    font-size: 16px;
+    padding-left: 5px;
+
+}
+
+#popPercentText {
+    font-size: 12px;
+
+}
+
+
+/*This is the stuff for the tsp widget*/
+
+
+.yaxis {
+    fill: none;
+    font-size: 12px;
+    font-weight: normal;
+    stroke: #000;
+}
+
+
+.xaxis .tick text {
+    fill: none;
+    font-size: 12px;
+    font-weight: normal;
+    fill: #000;
+    text-anchor: middle;
+}
+
+
+.xaxis .tick:first-of-type  text{
+    text-anchor: start;
+}
+
+
+
+
+.xaxis line {
+    stroke: lightgrey;
+
+}
+
+.xaxis path {
+    display: none;
+}
+
+.xaxis .minor {
+    stroke-opacity: .5;
+}
+
+
+.tspLineGroup .lineTotal, .legendTotal {
+    stroke: grey;
+    stroke-width: 3;
+    fill: none;
+}
+
+.tspLineGroup .lineForeign, .legendForeign {
+    stroke: #006838;
+    stroke-width: 2;
+    fill: none;
+    stroke-dasharray: 2, 2;
+}
+
+.tspLineGroup .lineEnglish, .legendEnglish {
+    stroke: #aa22c3;
+    stroke-width: 2;
+    fill: none;
+    stroke-dasharray: 2, 2;
+}
+
+
+
+.tspLineGroup text {
+    font-size: 12px;
+    text-anchor: end;
+}
+
+.tspLineGroup .positive {
+    fill: rgba(115, 110, 115, 0.78);
+}
+
+.tspLineGroup .negative {
+    fill: red;
+}
+
+
+
+.zeroLine {
+
+    stroke: rgba(128, 128, 128, 0.38);
+    stroke-width: 1;
+    fill: none;
+
+}
+
+
+
+
+.lgdText{
+    font-size: 10px;
+    fill: rgba(158, 158, 158, 0.98);
+    font-weight: normal;
+
+}
+
+
+.lcl-twitter-share {
+
+    margin-left: 0px;
+}
+
+.lcl-twitter-follow {
+
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
